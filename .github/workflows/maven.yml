@@ -24,9 +24,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: 'maven'
       - name: Build with Maven
-        run: mvn package --batch-mode --update-snapshots -T 1.5C -f pom.xml -P github
+        run: mvn clean install
       - uses: actions/upload-artifact@v4
         with:
           name: MCMMO
