@@ -82,7 +82,7 @@ public class SkillGuideCommand implements CommandExecutor {
             }
         }
 
-        allStrings.add("Page " + page + " of " + getTotalPageNumber());
+        allStrings.add("[ 第" + page + "页, 共" + getTotalPageNumber() + "页 ]");
         return allStrings;
     }
 
